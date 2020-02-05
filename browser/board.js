@@ -57,6 +57,7 @@ Board.prototype.createGrid = function() {
     let currentHTMLRow = `<tr id="row ${r}">`;
     for (let c = 0; c < this.width; c++) {
       let newNodeId = `${r}-${c}`, newNodeClass, newNode;
+      // x-y is out node. (h/2)-(w/4) is start, (h/2)-(3w/4) is target initially.
       if (r === Math.floor(this.height / 2) && c === Math.floor(this.width / 4)) {
         newNodeClass = "start";
         this.start = `${newNodeId}`;
