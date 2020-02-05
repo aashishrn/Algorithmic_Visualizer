@@ -79,7 +79,7 @@ Board.prototype.createGrid = function() {
   board.innerHTML = tableHTML;
 };
 
-// Board.getnode() is a simple function to extract node coordinates used at various places.
+// Board.prototype.getNode() is a simple function to extract node coordinates used at various places.
 Board.prototype.getNode = function(id) {
   // will convert "x-y" to board[x][y]
   let coordinates = id.split("-");
